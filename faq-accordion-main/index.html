@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>FAQ accordion</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="banner"></div>
+
+    <main class="card">
+      <heading class="card_heading">
+        <img src="./assets/images/icon-star.svg" alt="more" id="star" />
+        <h1 class="heading">FAQs</h1>
+      </heading>
+
+      <section class="content">
+        <article class="article_1 box">
+          <div class="question">
+            <h3 class="article_1-heading title_all" id="question1">
+              How does HTML structure a webpage?
+            </h3>
+            <img src="./assets/images/icon-plus.svg" alt="more" id="img1" />
+          </div>
+
+          <p class="article-paragraph" id="answer1">
+            HTML uses tags to define elements like headings and paragraphs,
+            creating the structure and content foundation for a webpage
+          </p>
+        </article>
+
+        <article class="article_2 box">
+          <div class="question">
+            <h3 class="article_2-heading title_all" id="question2">
+              Can CSS modify specific elements?
+            </h3>
+            <img src="./assets/images/icon-plus.svg" alt="more" id="img2" />
+          </div>
+
+          <p class="article-paragraph" id="answer2">
+            Yes, CSS targets HTML elements with selectors, allowing
+            customization of style attributes such as color, font, and layout.
+          </p>
+        </article>
+
+        <article class="article_3 box">
+          <div class="question">
+            <h3 class="article_3-heading title_all" id="question3">
+              What role does JavaScript play in web development?
+            </h3>
+            <img src="./assets/images/icon-plus.svg" alt="more" id="img3" />
+          </div>
+
+          <p class="article-paragraph" id="answer3">
+            JavaScript enhances interactivity by manipulating the DOM,
+            responding to user actions, and dynamically updating content on web
+            pages.
+          </p>
+        </article>
+        <article class="article_4 box">
+          <div class="question">
+            <h3 class="article_4-heading title_all" id="question4">
+              Why is responsive design important?
+            </h3>
+            <img src="./assets/images/icon-plus.svg" alt="more" id="img4" />
+          </div>
+          <p class="article-paragraph" id="answer4">
+            Responsive design ensures a consistent user experience across
+            devices by adapting layouts and content to various screen sizes,
+            improving accessibility and usability.
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

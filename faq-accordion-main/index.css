@@ -1,0 +1,134 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-pink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: inherit;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+}
+.banner {
+  width: 100%;
+  height: 36vh;
+  position: absolute;
+  top: 0;
+  background: url(./assets/images/background-pattern-desktop.svg);
+}
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--white);
+  border-radius: 1rem;
+  width: 50rem;
+  border: 0.1rem solid var(--grayish-purple);
+  padding: 2rem;
+  box-shadow: 0px 5px 15px -1px hsl(276, 100%, 53%);
+  transition: all 0.3s ease-in-out;
+}
+.card_heading {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.88rem;
+  margin-bottom: 2rem;
+}
+.heading {
+  color: var(--dark-purple);
+  font-weight: 900;
+  margin-left: 1.5rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px -10px hsl(276, 100%, 53%);
+}
+
+.question:hover > h3 {
+  color: purple;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  margin-top: 0.7rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.title_all {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.article-paragraph {
+  font-size: 1.3rem;
+  color: var(--grayish-purple);
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  /* margin-top: 2rem; */
+  text-indent: 10%;
+  text-align: justify;
+  text-justify: inter-word;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+
+    overflow: auto;
+    top: 15%;
+    padding: 1.5rem;
+    transition: top 0.3 ease-in-out;
+
+  }
+  .banner {
+    background: url(./assets/images/background-pattern-mobile.svg);
+  }
+  .card:hover {
+    transform: scale(1);
+  }
+  .question {
+    margin-bottom: 1rem;
+  }
+  .card_heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.7rem;
+  }
+  .article-paragraph {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  .title_all {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    line-height: 2rem;
+  }
+}

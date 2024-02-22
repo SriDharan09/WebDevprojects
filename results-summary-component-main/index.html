@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Results summary component</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,70?0;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <p class="header-p">Your Result</p>
+
+        <div class="circle">
+          <div class="inner-circle">
+            <div id="scored" class="circle-scored">76</div>
+            <p class="circle-p">of 100</p>
+          </div>
+        </div>
+
+        <h2 class="appriciation">Great</h2>
+        <p class="grey">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </header>
+      <section class="summary">
+        <h2 class="summary-title">Summary</h2>
+
+        <div class="row row-red">
+          <img src="{reaction}" alt="" />
+        </div>
+
+        <div class="col">
+          <div id="dataContainer"></div>
+          <button class="btn">Continue</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

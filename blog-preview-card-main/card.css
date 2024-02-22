@@ -1,0 +1,117 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --grey: hsl(0, 0%, 50%);
+  --yellow-primary: hsl(47, 88%, 63%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--yellow-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: inherit;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Figtree", sans-serif;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 2rem;
+  margin-top: auto;
+  width: 30rem;
+  border: 0.1rem solid var(--black);
+  padding: 1.7rem;
+  box-shadow: 0.6rem 0.6rem var(--black);
+  transition: 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translate(-0.5rem, -0.5rem);
+  box-shadow: 1.6rem 1.6rem var(--black);
+}
+
+.card:hover .card_link {
+  color: var(--yellow-primary);
+}
+
+.card_link:focus {
+  outline: none;
+  color: var(--yellow-primary);
+}
+
+.card_status {
+  background-color: var(--yellow-primary);
+  align-self: flex-start;
+  padding: 0.5rem 0.7rem;
+  color: var(--black);
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card_image {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.card_date {
+  color: var(--grey);
+  font: bolder;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.card_link {
+  transition: color 0.2s ease-in-out;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--black);
+}
+.card_paragraph {
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+.card_author {
+  display: flex;
+  align-items: center;
+}
+
+.card_author-img {
+  height: 3rem;
+  width: auto;
+  width: auto;
+}
+.card_author-name {
+  color: var(--black);
+  font-weight: bolder;
+}
+
+.card_heading {
+  margin-bottom: 1.2rem;
+}
+.card:hover > .card_link {
+  color: var(--yellow-primary);
+}
+
+.attribution {
+  color: var(--black);
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-top: auto;
+  margin-bottom: 1.6rem;
+}

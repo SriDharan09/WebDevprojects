@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>QR code component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <header class="header">
+          <canvas class="qr-image" id="qr-code"></canvas>
+        </header>
+
+        <div class="info">
+          <p class="text">
+            Get your desired QR code by typing below & Get your QR Code
+          </p>
+        </div>
+
+        <div class="input-form">
+          <input
+            class="input"
+            id="input"
+            type="text"
+            autofocus
+            placeholder="https://google.com"
+            required
+          />
+          <button class="btn" onclick="generateQRCode()" id="btn">
+            Generate
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
